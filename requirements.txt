@@ -1,0 +1,14 @@
+# Inference dependencies.
+# Qwen3 requires transformers >= 4.51.0.
+transformers==4.51.3
+accelerate>=0.34.0,<1.0.0
+safetensors>=0.4.3,<1.0.0
+huggingface-hub>=0.30.0,<1.0.0
+tokenizers>=0.21.0,<0.22.0
+
+# Colab already provides a CUDA-enabled PyTorch build. This lower bound keeps the
+# install from replacing it with an older version on a fresh environment.
+torch>=2.4.0
+
+# CPU-only test tooling.
+pytest>=8.0.0,<10.0.0

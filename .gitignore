@@ -1,0 +1,39 @@
+# Generated experiment outputs are intentionally not committed.
+results/*
+!results/.gitkeep
+
+# Local logs, PID files, exported artifacts, and model caches.
+logs/
+hf_export/
+*.log
+*.pid
+
+# Python caches and environments.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Hugging Face / Colab local caches (if a cache is placed in the repo).
+.cache/
+huggingface/
+
+# Secrets and local environment files.
+.env
+.env.*
+secrets.json
+*.token
+
+# Editors / OS noise.
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+
+# Downloaded result bundles.
+results-*.zip
+*.zip

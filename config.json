@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "model": {
+    "id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "tokenizer_id": "Qwen/Qwen3-1.7B",
+    "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "precision": "float16",
+    "device": "cuda",
+    "trust_remote_code": false,
+    "non_thinking_mode": true,
+    "min_free_gpu_memory_gb": 5.0
+  },
+  "generation": {
+    "max_new_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0,
+    "seed": 42
+  },
+  "experiment": {
+    "prompts_path": "prompts.jsonl",
+    "repetitions": 1,
+    "include_prompt_ids": [],
+    "include_categories": [],
+    "output_extraction": {
+      "enabled": false,
+      "method": "none"
+    }
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8765,
+    "startup_timeout_seconds": 1200,
+    "request_timeout_seconds": 300,
+    "max_consecutive_failures": 3
+  },
+  "results": {
+    "directory": "results"
+  },
+  "scoring": {
+    "version": "1.0.0"
+  },
+  "reporting": {
+    "show_outputs": true,
+    "color": "auto",
+    "max_output_chars": 0
+  },
+  "known_deviations": [
+    "Model: Qwen/Qwen3-1.7B is used instead of the PRD default Qwen/Qwen3-4B. The smaller model was explicitly approved for Colab free-tier memory headroom. No automatic model switching occurs.",
+    "Prompt count: 15 prompts are used instead of the PRD's suggested 30 to 50. The user approved this smaller set as sufficient for the demonstration.",
+    "Email-body extraction is disabled. Primary scoring applies to the complete raw generated text, exactly as returned by the model."
+  ]
+}
