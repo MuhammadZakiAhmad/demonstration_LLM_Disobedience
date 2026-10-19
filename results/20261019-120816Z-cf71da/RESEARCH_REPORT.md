@@ -57,9 +57,11 @@ The **14% violation rate describes this evaluation set**, not the general behavi
 
 My next step would be to run ablation style studies using matched prompts. I would change one factor at a time, such as the wording or placement of the instruction, and repeat generations to measure how these changes affect compliance.
 
-I also want to compare **instruction fine tuning (IFT) with reinforcement learning (RL)** to see which approach improves compliance more effectively. After evaluating both on the same tasks and held out prompts, I would investigate their internal differences at a lower level, such as activations, attention patterns, and layer wise to see what changes from the base model, it might explain why one approach is better than the other for better compliance by the LLM in terms of Instruction following and thus reliability.
+I also want to compare **instruction fine tuning (IFT) with reinforcement learning (RL)** to see which approach improves compliance more effectively. After evaluating both on the same tasks and held out prompts, I would investigate their internal differences at a lower level, including activations, attention patterns, and layer wise changes from the base model. This could help explain why one approach performs better than the other and how each changes the model's ability to follow explicit instructions.
 
-One possible direction is to train models on examples where they must satisfy writing goals while respecting precise constraints. The aim would not be to remove hyphens from all text, but to use them only when permitted by the user's instructions.
+I see this as relevant beyond email writing. As LLMs increasingly act as the brains of AI agents, they must follow constraints across multiple steps, tools, and decisions. An agent might be asked to use a specific format, avoid certain actions, or respect limits while completing a larger task. If it ignores one of these constraints, the consequences can extend beyond a single response. By studying how models learn to respect precise instructions, this research could contribute to more reliable agents that follow user requirements consistently, even when those requirements conflict with common patterns in their training data.
+
+Ultimately, I want to understand not only whether a model follows an instruction, but also which training methods make it more reliable and what changes inside the model accompany that improvement. This could help guide the development of models that are not only capable of completing tasks, but also more dependable in how they complete them.
 
 These are proposed directions, not findings from the current experiment. I have not yet tested either training method.
 
