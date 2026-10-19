@@ -1,0 +1,6 @@
+# Preserve exact bytes for experiment inputs and artifacts.
+# Run manifests and bundle checksums are SHA-256 over these files; CRLF
+# conversion on Windows would break verification.
+prompts.jsonl -text
+config.json -text
+results/** -text

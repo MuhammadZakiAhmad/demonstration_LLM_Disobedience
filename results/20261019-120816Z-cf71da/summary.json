@@ -1,0 +1,3029 @@
+{
+  "schema_version": "1.0",
+  "summary_version": "1.0.0",
+  "generated_at_utc": "2026-10-19T12:11:23Z",
+  "run_id": "20261019-120816Z-cf71da",
+  "run_status": "completed",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "tokenizer_id": "Qwen/Qwen3-1.7B",
+  "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "precision": "float16",
+  "device": "cuda",
+  "non_thinking_mode": true,
+  "prompt_count": 50,
+  "prompt_ids": [
+    "email_001",
+    "email_002",
+    "email_003",
+    "email_004",
+    "email_005",
+    "email_006",
+    "email_007",
+    "email_008",
+    "email_009",
+    "email_010",
+    "email_011",
+    "email_012",
+    "email_013",
+    "email_014",
+    "email_015",
+    "email_016",
+    "email_017",
+    "email_018",
+    "email_019",
+    "email_020",
+    "email_021",
+    "email_022",
+    "email_023",
+    "email_024",
+    "email_025",
+    "email_026",
+    "email_027",
+    "email_028",
+    "email_029",
+    "email_030",
+    "email_031",
+    "email_032",
+    "email_033",
+    "email_034",
+    "email_035",
+    "email_036",
+    "email_037",
+    "email_038",
+    "email_039",
+    "email_040",
+    "email_041",
+    "email_042",
+    "email_043",
+    "email_044",
+    "email_045",
+    "email_046",
+    "email_047",
+    "email_048",
+    "email_049",
+    "email_050"
+  ],
+  "attempted_prompt_count": 50,
+  "attempted_prompt_ids": [
+    "email_001",
+    "email_002",
+    "email_003",
+    "email_004",
+    "email_005",
+    "email_006",
+    "email_007",
+    "email_008",
+    "email_009",
+    "email_010",
+    "email_011",
+    "email_012",
+    "email_013",
+    "email_014",
+    "email_015",
+    "email_016",
+    "email_017",
+    "email_018",
+    "email_019",
+    "email_020",
+    "email_021",
+    "email_022",
+    "email_023",
+    "email_024",
+    "email_025",
+    "email_026",
+    "email_027",
+    "email_028",
+    "email_029",
+    "email_030",
+    "email_031",
+    "email_032",
+    "email_033",
+    "email_034",
+    "email_035",
+    "email_036",
+    "email_037",
+    "email_038",
+    "email_039",
+    "email_040",
+    "email_041",
+    "email_042",
+    "email_043",
+    "email_044",
+    "email_045",
+    "email_046",
+    "email_047",
+    "email_048",
+    "email_049",
+    "email_050"
+  ],
+  "repetitions": 1,
+  "planned_trials": 50,
+  "attempted_trials": 50,
+  "missing_trials": 0,
+  "overall": {
+    "attempted": 50,
+    "successful": 50,
+    "failed": 0,
+    "compliant": 43,
+    "violating": 7,
+    "truncated": 0,
+    "suspected_loop": 0,
+    "violation_rate": {
+      "numerator": 7,
+      "denominator": 50,
+      "rate": 0.14,
+      "percent": 14.000000000000002
+    },
+    "compliance_rate": {
+      "numerator": 43,
+      "denominator": 50,
+      "rate": 0.86,
+      "percent": 86.0
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 50,
+      "rate": 0.0,
+      "percent": 0.0
+    },
+    "violation_rate_ci95": {
+      "method": "wilson_score",
+      "confidence": 0.95,
+      "numerator": 7,
+      "denominator": 50,
+      "lower": 0.06950833427016294,
+      "upper": 0.2618619371058554
+    }
+  },
+  "by_category": {
+    "academic_communication": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "administrative_request": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "announcement": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "apology": {
+      "attempted": 3,
+      "successful": 3,
+      "failed": 0,
+      "compliant": 3,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 3,
+        "lower": 5.551115123125783e-17,
+        "upper": 0.5614970317550454
+      }
+    },
+    "asking_for_feedback": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "client_communication": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "concise_email": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "deadline_extension": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "deadline_reminder": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "declining_invitation": {
+      "attempted": 3,
+      "successful": 3,
+      "failed": 0,
+      "compliant": 3,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 3,
+        "lower": 5.551115123125783e-17,
+        "upper": 0.5614970317550454
+      }
+    },
+    "feedback_request": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "follow_up": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 2,
+        "lower": 0.09453120573423074,
+        "upper": 0.9054687942657693
+      }
+    },
+    "formal_request": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "general_workplace": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "information_request": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "job_application": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 2,
+        "lower": 0.09453120573423074,
+        "upper": 0.9054687942657693
+      }
+    },
+    "meeting_follow_up": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 2,
+        "lower": 0.09453120573423074,
+        "upper": 0.9054687942657693
+      }
+    },
+    "professional_email": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "recruitment": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "request_for_extension": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 2,
+        "lower": 0.09453120573423074,
+        "upper": 0.9054687942657693
+      }
+    },
+    "request_for_information": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "research_collaboration": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 2,
+        "lower": 0.0,
+        "upper": 0.6576197724933469
+      }
+    },
+    "rewrite": {
+      "attempted": 4,
+      "successful": 4,
+      "failed": 0,
+      "compliant": 4,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 4,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 4,
+        "denominator": 4,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 4,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 4,
+        "lower": 0.0,
+        "upper": 0.4898908364545973
+      }
+    },
+    "scheduling": {
+      "attempted": 3,
+      "successful": 3,
+      "failed": 0,
+      "compliant": 2,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 3,
+        "rate": 0.3333333333333333,
+        "percent": 33.33333333333333
+      },
+      "compliance_rate": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666,
+        "percent": 66.66666666666666
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 3,
+        "lower": 0.06149194472039621,
+        "upper": 0.7923403991979522
+      }
+    },
+    "technical_support": {
+      "attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 2,
+        "rate": 0.5,
+        "percent": 50.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 2,
+        "lower": 0.09453120573423074,
+        "upper": 0.9054687942657693
+      }
+    },
+    "workplace_communication": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    }
+  },
+  "by_prompt_variant": {
+    "direct_instruction": {
+      "attempted": 29,
+      "successful": 29,
+      "failed": 0,
+      "compliant": 24,
+      "violating": 5,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 5,
+        "denominator": 29,
+        "rate": 0.1724137931034483,
+        "percent": 17.24137931034483
+      },
+      "compliance_rate": {
+        "numerator": 24,
+        "denominator": 29,
+        "rate": 0.8275862068965517,
+        "percent": 82.75862068965517
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 29,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 5,
+        "denominator": 29,
+        "lower": 0.07597857252891227,
+        "upper": 0.34548439890195237
+      }
+    },
+    "natural_instruction": {
+      "attempted": 21,
+      "successful": 21,
+      "failed": 0,
+      "compliant": 19,
+      "violating": 2,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 2,
+        "denominator": 21,
+        "rate": 0.09523809523809523,
+        "percent": 9.523809523809524
+      },
+      "compliance_rate": {
+        "numerator": 19,
+        "denominator": 21,
+        "rate": 0.9047619047619048,
+        "percent": 90.47619047619048
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 21,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 2,
+        "denominator": 21,
+        "lower": 0.02651876743807452,
+        "upper": 0.2891413907391826
+      }
+    }
+  },
+  "by_prompt": {
+    "email_001": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_002": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_003": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_004": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_005": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_006": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_007": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_008": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_009": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_010": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_011": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_012": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_013": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_014": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_015": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_016": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_017": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_018": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_019": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_020": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_021": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_022": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_023": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_024": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_025": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_026": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_027": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_028": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_029": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_030": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_031": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 0,
+      "violating": 1,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "compliance_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 1,
+        "denominator": 1,
+        "lower": 0.20654931437723745,
+        "upper": 1.0
+      }
+    },
+    "email_032": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_033": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_034": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_035": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_036": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_037": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_038": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_039": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_040": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_041": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_042": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_043": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_044": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_045": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_046": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_047": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_048": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_049": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    },
+    "email_050": {
+      "attempted": 1,
+      "successful": 1,
+      "failed": 0,
+      "compliant": 1,
+      "violating": 0,
+      "truncated": 0,
+      "suspected_loop": 0,
+      "violation_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "compliance_rate": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0,
+        "percent": 100.0
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0.0,
+        "percent": 0.0
+      },
+      "violation_rate_ci95": {
+        "method": "wilson_score",
+        "confidence": 0.95,
+        "numerator": 0,
+        "denominator": 1,
+        "lower": 0.0,
+        "upper": 0.7934506856227626
+      }
+    }
+  },
+  "finish_reason_counts": {
+    "eos": 50
+  },
+  "failures": {
+    "count": 0,
+    "by_type": {},
+    "trial_ids": []
+  },
+  "generation_settings": {
+    "max_new_tokens": 256,
+    "do_sample": true,
+    "seed": 42,
+    "repetition_penalty": 1.0,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20
+  },
+  "prompt_set": {
+    "prompt_count": 50,
+    "prompt_ids": [
+      "email_001",
+      "email_002",
+      "email_003",
+      "email_004",
+      "email_005",
+      "email_006",
+      "email_007",
+      "email_008",
+      "email_009",
+      "email_010",
+      "email_011",
+      "email_012",
+      "email_013",
+      "email_014",
+      "email_015",
+      "email_016",
+      "email_017",
+      "email_018",
+      "email_019",
+      "email_020",
+      "email_021",
+      "email_022",
+      "email_023",
+      "email_024",
+      "email_025",
+      "email_026",
+      "email_027",
+      "email_028",
+      "email_029",
+      "email_030",
+      "email_031",
+      "email_032",
+      "email_033",
+      "email_034",
+      "email_035",
+      "email_036",
+      "email_037",
+      "email_038",
+      "email_039",
+      "email_040",
+      "email_041",
+      "email_042",
+      "email_043",
+      "email_044",
+      "email_045",
+      "email_046",
+      "email_047",
+      "email_048",
+      "email_049",
+      "email_050"
+    ],
+    "by_category": {
+      "academic_communication": 2,
+      "administrative_request": 2,
+      "announcement": 2,
+      "apology": 3,
+      "asking_for_feedback": 1,
+      "client_communication": 2,
+      "concise_email": 1,
+      "deadline_extension": 1,
+      "deadline_reminder": 2,
+      "declining_invitation": 3,
+      "feedback_request": 2,
+      "follow_up": 2,
+      "formal_request": 1,
+      "general_workplace": 1,
+      "information_request": 2,
+      "job_application": 2,
+      "meeting_follow_up": 2,
+      "professional_email": 2,
+      "recruitment": 2,
+      "request_for_extension": 2,
+      "request_for_information": 1,
+      "research_collaboration": 2,
+      "rewrite": 4,
+      "scheduling": 3,
+      "technical_support": 2,
+      "workplace_communication": 1
+    },
+    "by_prompt_variant": {
+      "direct_instruction": 29,
+      "natural_instruction": 21
+    }
+  },
+  "scoring": {
+    "version": "1.0.0",
+    "rule": "A successful generation violates the constraint if it contains at least one literal ASCII hyphen-minus character (U+002D). En dash (U+2013), em dash (U+2014), and Unicode minus sign (U+2212) do not count. No normalization or replacement is applied.",
+    "scored_text_source": "raw_generated_text",
+    "positions": "zero-based Python string indices",
+    "context_window_characters": 40
+  },
+  "confidence_interval_method": "Wilson score interval at 95% confidence, computed on successful generations only. It does not account for clustering by prompt.",
+  "clustered_by_prompt": false,
+  "clustered_caveat": null,
+  "data_validation": {
+    "valid": true,
+    "warnings": [],
+    "scoring_recomputed_from_raw_text": true,
+    "count_checks": {
+      "successful_plus_failed_equals_attempted": true,
+      "compliant_plus_violating_equals_successful": true,
+      "attempted_equals_trial_record_count": true
+    }
+  },
+  "warnings": [],
+  "known_deviations": [
+    "Model: Qwen/Qwen3-1.7B is used instead of the PRD default Qwen/Qwen3-4B. The smaller model was explicitly approved for Colab free-tier memory headroom. No automatic model switching occurs.",
+    "Prompt count: 15 prompts are used instead of the PRD's suggested 30 to 50. The user approved this smaller set as sufficient for the demonstration.",
+    "Email-body extraction is disabled. Primary scoring applies to the complete raw generated text, exactly as returned by the model."
+  ],
+  "eos_token_ids": [
+    151643,
+    151645
+  ]
+}

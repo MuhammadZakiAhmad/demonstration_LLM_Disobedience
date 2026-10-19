@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20261019-120816Z-cf71da",
+  "start_time_utc": "2026-10-19T12:08:19Z",
+  "end_time_utc": "2026-10-19T12:11:23Z",
+  "updated_at_utc": "2026-10-19T12:11:23Z",
+  "status": "completed",
+  "git_commit": "3832e649e36555e3b22c3387155084a18360d3e0",
+  "git_dirty": false,
+  "model": {
+    "id": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "tokenizer_id": "Qwen/Qwen3-1.7B",
+    "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "precision": "float16",
+    "device": "cuda",
+    "non_thinking_mode": true
+  },
+  "generation_config": {
+    "max_new_tokens": 256,
+    "do_sample": true,
+    "seed": 42,
+    "repetition_penalty": 1.0,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20
+  },
+  "experiment": {
+    "prompts_path": "prompts.jsonl",
+    "repetitions": 1,
+    "include_prompt_ids": [],
+    "include_categories": [],
+    "output_extraction": {
+      "enabled": false,
+      "method": "none"
+    }
+  },
+  "prompt_file": {
+    "path": "prompts.jsonl",
+    "sha256": "965eceb265353361738ad969c155198e680212f0ce76c2d43c3ca108d431f5f2"
+  },
+  "config_file": {
+    "path": "config.json",
+    "sha256": "542bf8549b66eb592c5412ccc88fa0980067d6500ec4389c35d75d6a7c8c6bfa"
+  },
+  "prompt_set": {
+    "prompt_count": 50,
+    "prompt_ids": [
+      "email_001",
+      "email_002",
+      "email_003",
+      "email_004",
+      "email_005",
+      "email_006",
+      "email_007",
+      "email_008",
+      "email_009",
+      "email_010",
+      "email_011",
+      "email_012",
+      "email_013",
+      "email_014",
+      "email_015",
+      "email_016",
+      "email_017",
+      "email_018",
+      "email_019",
+      "email_020",
+      "email_021",
+      "email_022",
+      "email_023",
+      "email_024",
+      "email_025",
+      "email_026",
+      "email_027",
+      "email_028",
+      "email_029",
+      "email_030",
+      "email_031",
+      "email_032",
+      "email_033",
+      "email_034",
+      "email_035",
+      "email_036",
+      "email_037",
+      "email_038",
+      "email_039",
+      "email_040",
+      "email_041",
+      "email_042",
+      "email_043",
+      "email_044",
+      "email_045",
+      "email_046",
+      "email_047",
+      "email_048",
+      "email_049",
+      "email_050"
+    ],
+    "by_category": {
+      "academic_communication": 2,
+      "administrative_request": 2,
+      "announcement": 2,
+      "apology": 3,
+      "asking_for_feedback": 1,
+      "client_communication": 2,
+      "concise_email": 1,
+      "deadline_extension": 1,
+      "deadline_reminder": 2,
+      "declining_invitation": 3,
+      "feedback_request": 2,
+      "follow_up": 2,
+      "formal_request": 1,
+      "general_workplace": 1,
+      "information_request": 2,
+      "job_application": 2,
+      "meeting_follow_up": 2,
+      "professional_email": 2,
+      "recruitment": 2,
+      "request_for_extension": 2,
+      "request_for_information": 1,
+      "research_collaboration": 2,
+      "rewrite": 4,
+      "scheduling": 3,
+      "technical_support": 2,
+      "workplace_communication": 1
+    },
+    "by_prompt_variant": {
+      "direct_instruction": 29,
+      "natural_instruction": 21
+    }
+  },
+  "total_prompts_selected": 50,
+  "counts": {
+    "planned_trials": 50,
+    "attempted_trials": 50,
+    "successful": 50,
+    "failed": 0,
+    "compliant": 43,
+    "violating": 7,
+    "interrupted": false
+  },
+  "scoring": {
+    "version": "1.0.0",
+    "rule": "Successful generations containing at least one literal ASCII hyphen-minus (U+002D) are violations. En dash, em dash, and Unicode minus do not count. No normalization is applied.",
+    "scored_text_source": "raw_generated_text"
+  },
+  "environment": {
+    "collected_at_utc": "2026-10-19T12:08:16Z",
+    "python": {
+      "version": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+      "version_info": [
+        3,
+        13,
+        15
+      ],
+      "implementation": "CPython"
+    },
+    "platform": {
+      "system": "Linux",
+      "release": "6.6.122+",
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+      "cpu_count": 2
+    },
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "transformers": "4.51.3",
+      "accelerate": "0.34.2",
+      "tokenizers": "0.21.4",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "0.36.2",
+      "pytest": "8.4.2"
+    },
+    "gpu": {
+      "torch_available": true,
+      "cuda_available": true,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Tesla T4",
+          "total_memory_bytes": 15637086208,
+          "total_memory_human": "14.56 GiB",
+          "free_memory_bytes": 11966152704,
+          "free_memory_human": "11.14 GiB",
+          "compute_capability": "7.5"
+        }
+      ],
+      "error": null,
+      "torch_version": "2.11.0+cu130",
+      "cuda_version": "13.0",
+      "cudnn_version": 92700,
+      "bf16_supported": true,
+      "device_count": 1
+    },
+    "notes": [
+      "Available GPU memory is sampled at report time and may change.",
+      "Environment variables are intentionally not collected."
+    ]
+  },
+  "server": {
+    "status": "ready",
+    "backend_mode": "real",
+    "fake_backend": false,
+    "pid": 2426,
+    "host": "127.0.0.1",
+    "port": 8765,
+    "started_at_utc": "2026-10-19T12:08:13Z",
+    "uptime_seconds": 3.772,
+    "request_count": 0,
+    "generation_count": 0,
+    "last_error": null,
+    "config_sha256": "542bf8549b66eb592c5412ccc88fa0980067d6500ec4389c35d75d6a7c8c6bfa",
+    "model": {
+      "model_id": "Qwen/Qwen3-1.7B",
+      "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "actual_model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "tokenizer_id": "Qwen/Qwen3-1.7B",
+      "tokenizer_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "actual_tokenizer_revision": null,
+      "precision": "float16",
+      "device": "cuda:0",
+      "non_thinking_mode": true,
+      "eos_token_ids": [
+        151643,
+        151645
+      ],
+      "pad_token_id": 151643,
+      "loaded_at_utc": null,
+      "load_duration_seconds": 81.89070018799998,
+      "warnings": []
+    }
+  },
+  "server_environment": {
+    "collected_at_utc": "2026-10-19T12:06:47Z",
+    "python": {
+      "version": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+      "version_info": [
+        3,
+        13,
+        15
+      ],
+      "implementation": "CPython"
+    },
+    "platform": {
+      "system": "Linux",
+      "release": "6.6.122+",
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+      "cpu_count": 2
+    },
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "transformers": "4.51.3",
+      "accelerate": "0.34.2",
+      "tokenizers": "0.21.4",
+      "safetensors": "0.8.0",
+      "huggingface-hub": "0.36.2",
+      "pytest": "8.4.2"
+    },
+    "gpu": {
+      "torch_available": true,
+      "cuda_available": true,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Tesla T4",
+          "total_memory_bytes": 15637086208,
+          "total_memory_human": "14.56 GiB",
+          "free_memory_bytes": 15525019648,
+          "free_memory_human": "14.46 GiB",
+          "compute_capability": "7.5"
+        }
+      ],
+      "error": null,
+      "torch_version": "2.11.0+cu130",
+      "cuda_version": "13.0",
+      "cudnn_version": 92700,
+      "bf16_supported": true,
+      "device_count": 1
+    },
+    "notes": [
+      "Available GPU memory is sampled at report time and may change.",
+      "Environment variables are intentionally not collected."
+    ]
+  },
+  "overrides": {},
+  "warnings": [],
+  "known_deviations": [
+    "Model: Qwen/Qwen3-1.7B is used instead of the PRD default Qwen/Qwen3-4B. The smaller model was explicitly approved for Colab free-tier memory headroom. No automatic model switching occurs.",
+    "Prompt count: 15 prompts are used instead of the PRD's suggested 30 to 50. The user approved this smaller set as sufficient for the demonstration.",
+    "Email-body extraction is disabled. Primary scoring applies to the complete raw generated text, exactly as returned by the model."
+  ],
+  "error": null,
+  "summary_error": null,
+  "output_files": [
+    "config_snapshot.json",
+    "environment.txt",
+    "errors.jsonl",
+    "outputs.md",
+    "prompts_snapshot.jsonl",
+    "report.md",
+    "run.log",
+    "run_manifest.json",
+    "summary.json",
+    "trials.jsonl",
+    "violations.jsonl"
+  ],
+  "data_validation": {
+    "valid": true,
+    "warnings": [],
+    "scoring_recomputed_from_raw_text": true,
+    "count_checks": {
+      "successful_plus_failed_equals_attempted": true,
+      "compliant_plus_violating_equals_successful": true,
+      "attempted_equals_trial_record_count": true
+    }
+  },
+  "publication_note": "Local absolute paths were replaced with bundle-relative filenames. Hashes, model identity, settings, counts, and raw records are unchanged.",
+  "exported_at_utc": "2026-10-19T13:02:19Z"
+}

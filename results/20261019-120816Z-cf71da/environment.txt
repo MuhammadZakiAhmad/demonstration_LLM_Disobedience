@@ -1,0 +1,40 @@
+Environment report
+==================
+Collected at (UTC): 2026-10-19T12:08:16Z
+
+[Python]
+  implementation: CPython
+  version: 3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]
+
+[Platform]
+  system: Linux
+  release: 6.6.122+
+  machine: x86_64
+  processor: x86_64
+  platform: Linux-6.6.122+-x86_64-with-glibc2.39
+  cpu_count: 2
+
+[Packages]
+  torch: 2.11.0+cu130
+  transformers: 4.51.3
+  accelerate: 0.34.2
+  tokenizers: 0.21.4
+  safetensors: 0.8.0
+  huggingface-hub: 0.36.2
+  pytest: 8.4.2
+
+[GPU]
+  torch available: True
+  torch version: 2.11.0+cu130
+  CUDA available: True
+  CUDA version: 13.0
+  cuDNN version: 92700
+  bfloat16 supported: True
+  device 0: Tesla T4
+    total memory: 14.56 GiB
+    free memory: 11.14 GiB
+    compute capability: 7.5
+
+[Notes]
+  - Available GPU memory is sampled at report time and may change.
+  - Environment variables are intentionally not collected.

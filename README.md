@@ -506,7 +506,7 @@ python scripts/server_client.py shutdown
 ## Known limitations
 
 - Results apply only to the tested model, prompts, and generation settings.
-- The prompt set is 15 prompts (explicitly approved deviation from the PRD's 30–50).
+- The prompt set is 50 prompts (29 direct instruction, 21 natural instruction).
 - Only Qwen3-1.7B is evaluated; no cross-model comparison is performed.
 - Email-body extraction is not implemented, so any commentary is scored too.
 - A fixed seed does not guarantee bit-for-bit reproducibility across environments.

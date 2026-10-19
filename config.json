@@ -50,7 +50,7 @@
   },
   "known_deviations": [
     "Model: Qwen/Qwen3-1.7B is used instead of the PRD default Qwen/Qwen3-4B. The smaller model was explicitly approved for Colab free-tier memory headroom. No automatic model switching occurs.",
-    "Prompt count: 15 prompts are used instead of the PRD's suggested 30 to 50. The user approved this smaller set as sufficient for the demonstration.",
+    "Prompt count: 50 prompts are used, within the PRD's suggested 30 to 50. The set was expanded from the original 15-prompt deviation on 2026-10-19.",
     "Email-body extraction is disabled. Primary scoring applies to the complete raw generated text, exactly as returned by the model."
   ]
 }

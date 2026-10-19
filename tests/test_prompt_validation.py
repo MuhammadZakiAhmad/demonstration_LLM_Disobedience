@@ -176,7 +176,7 @@ def test_prompt_set_summary(tmp_path):
 
 def test_repository_prompt_file_is_valid():
     prompts, warnings = load_prompts(ROOT / "prompts.jsonl")
-    assert len(prompts) == 15
+    assert len(prompts) == 50
     assert prompts[0]["prompt_id"] == "email_001"
-    assert prompts[-1]["prompt_id"] == "email_015"
+    assert prompts[-1]["prompt_id"] == "email_050"
     assert warnings == []

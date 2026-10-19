@@ -94,14 +94,18 @@ def _find_inputs(run_dir: Path, manifest: dict[str, Any], repo_root: Path) -> tu
     prompt_hash = (manifest.get("prompt_file") or {}).get("sha256")
     config_hash = (manifest.get("config_file") or {}).get("sha256")
 
+    prompt_relative = Path((manifest.get("prompt_file") or {}).get("path", ""))
+    config_relative = Path((manifest.get("config_file") or {}).get("path", ""))
     prompt_candidates = [
         run_dir / "prompts_snapshot.jsonl",
-        Path((manifest.get("prompt_file") or {}).get("path", "")),
+        run_dir / prompt_relative,
+        prompt_relative,
         repo_root / "prompts.jsonl",
     ]
     config_candidates = [
         run_dir / "config_snapshot.json",
-        Path((manifest.get("config_file") or {}).get("path", "")),
+        run_dir / config_relative,
+        config_relative,
         repo_root / "config.json",
     ]
 
@@ -294,6 +298,10 @@ def _readme(
 
 def _research_markdown(summary: dict[str, Any]) -> str:
     overall = summary.get("overall") or {}
+    prompt_count = summary.get("prompt_count")
+    if not isinstance(prompt_count, int):
+        prompt_count = summary.get("attempted_prompt_count")
+    prompt_label = prompt_count if isinstance(prompt_count, int) else "The"
     lines = [
         "# Research Method and Findings",
         "",
@@ -322,7 +330,7 @@ def _research_markdown(summary: dict[str, Any]) -> str:
         "",
         "## Limitations and future work",
         "",
-        "- The prompt set is small (15 prompts) and uses two prompt formulations.",
+        f"- The prompt set contains {prompt_label} prompts and uses two prompt formulations.",
         "- The experiment evaluates one model and one decoding configuration.",
         "- Email-body extraction was not implemented, so commentary would also be scored.",
         "- Repeated trials would be clustered by prompt; independence assumptions may "

@@ -1,6 +1,9 @@
-# Generated experiment outputs are intentionally not committed.
+# Generated experiment outputs are intentionally not committed,
+# except explicitly published run bundles.
 results/*
 !results/.gitkeep
+!results/20261019-120816Z-cf71da/
+!results/20261019-120816Z-cf71da/**
 
 # Local logs, PID files, exported artifacts, and model caches.
 logs/
