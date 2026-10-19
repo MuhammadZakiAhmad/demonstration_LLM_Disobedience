@@ -57,7 +57,7 @@ The **14% violation rate describes this evaluation set**, not the general behavi
 
 My next step would be to run ablation style studies using matched prompts. I would change one factor at a time, such as the wording or placement of the instruction, and repeat generations to measure how these changes affect compliance.
 
-I also want to compare **instruction fine tuning (IFT) with reinforcement learning (RL)** to see which approach improves compliance more effectively. After evaluating both on the same tasks and held out prompts, I would investigate their internal differences at a lower level, such as activations, attention patterns, and layer wise to see what changes from the base model, it might explain the difference. This could help me understand how each training approach changes model behavior.
+I also want to compare **instruction fine tuning (IFT) with reinforcement learning (RL)** to see which approach improves compliance more effectively. After evaluating both on the same tasks and held out prompts, I would investigate their internal differences at a lower level, such as activations, attention patterns, and layer wise to see what changes from the base model, it might explain why one approach is better than the other for better compliance by the LLM in terms of Instruction following and thus reliability.
 
 One possible direction is to train models on examples where they must satisfy writing goals while respecting precise constraints. The aim would not be to remove hyphens from all text, but to use them only when permitted by the user's instructions.
 
