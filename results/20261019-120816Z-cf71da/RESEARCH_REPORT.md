@@ -77,6 +77,6 @@ The repository contains the evaluation code, prompt definitions, scoring logic, 
 | Generations per prompt | 1 |
 | Evaluation environment | Google Colab |
 
-**Public Hugging Face Bucket:** [demonstration_llm_disobedience](https://huggingface.co/mza2001/demonstration_llm_disobedience/)
+**Public Hugging Face Bucket:** [demonstration_llm_disobedience](https://huggingface.co/buckets/mza2001/demonstration_llm_disobedience-bucket)
 
 The public repository provides access to the project artifacts for further inspection.
