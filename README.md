@@ -2,11 +2,11 @@
 
 ## 1. The observation
 
-I have noticed a small but recurring problem when using language models to write emails. Even when I explicitly ask a model not to use hyphens, it sometimes includes them in the subject line or body.
+It is from my own again and again personal expereince, when using language models to write emails it uses lots of hyphens. Even when I explicitly ask a model not to use them, it sometimes includes them in the subject line or body.
 
 This may seem like a minor formatting issue. However, it raises a broader question about **instruction following**. If a model cannot consistently respect a simple constraint, how reliable is it when a task has several requirements that must all be followed?
 
-I chose to study this behavior because it comes from my own experience using language models, rather than from a standard benchmark and I have seen it sometimes happening in the largest frontier models aswells.
+I chose to study this behavior because it comes from my own experience using language models, rather than from a standard benchmark and I have seen it sometimes happening even in the largest frontier models aswells.
 
 ## 2. Research question
 
