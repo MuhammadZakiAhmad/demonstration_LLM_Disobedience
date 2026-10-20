@@ -6,7 +6,7 @@ I have noticed a small but recurring problem when using language models to write
 
 This may seem like a minor formatting issue. However, it raises a broader question about **instruction following**. If a model cannot consistently respect a simple constraint, how reliable is it when a task has several requirements that must all be followed?
 
-I chose to study this behavior because it comes from my own experience using language models, rather than from a standard benchmark. I wanted to see whether I could measure it in a controlled setting.
+I chose to study this behavior because it comes from my own experience using language models, rather than from a standard benchmark.
 
 ## 2. Research question
 
@@ -18,7 +18,7 @@ My initial expectation was that the model would sometimes violate the instructio
 
 ### Disclaimer on authorship
 
-Though all the coding for this project was done using Claude Code. I designed the experiment myself, including the research question, prompt set, instruction variations, scoring rule, and evaluation plan. Each adn every decision of the architecture of this experiment is mine and I can defend/discuss my choices with my own rational.
+Though all the coding for this project was primarily done using Claude Code. I designed the experiment myself, including the research question, prompt set, instruction variations, scoring rule, and evaluation plan. Each and every decision of the architecture of this experiment is mine and I can defend/discuss my choices with my own rational.
 
 ## 3. Model evaluation
 
@@ -43,7 +43,7 @@ I counted a response as a violation if it contained the ASCII hyphen minus chara
 
 ### What did the violations look like?
 
-The violations appeared in subject lines and email bodies. Examples included `Follow-Up`, `two-day`, and `check-in`.
+The violations appeared in both subject lines and email bodies. Examples included `Follow-Up`, `two-day`, and `check-in`.
 
 The findings show that the model did not consistently follow the constraint in this set of trials. They do not explain why. Common writing patterns may contribute, but prompt wording, instruction placement, and generation variability are other possible explanations.
 
