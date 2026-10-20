@@ -79,6 +79,6 @@ The repository contains the evaluation code, prompt definitions, scoring logic, 
 
 **Public Hugging Face Bucket:** [demonstration_llm_disobedience](https://huggingface.co/buckets/mza2001/demonstration_llm_disobedience-bucket)
 
-**GitHub:** https://github.com/MuhammadZakiAhmad/demonstration_LLM_Disobedience/
+**GitHub:** [demonstration_llm_disobedience]( https://github.com/MuhammadZakiAhmad/demonstration_LLM_Disobedience/)
 
 The public repository provides access to the project artifacts for further inspection.
