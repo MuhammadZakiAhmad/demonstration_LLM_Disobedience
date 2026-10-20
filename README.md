@@ -18,7 +18,7 @@ My initial expectation was that the model would sometimes violate the instructio
 
 ### DISCLAIMER
 
-Though all the coding for this project was done using Claude Code. I designed the experiment myself, including the research question, prompt set, instruction variations, scoring rule, and evaluation plan. Each adn every decision of the architecture of this experiment is mine and I can defend/discuss my choices with my own rational.
+Though all the coding for this project was done using Claude Code. I designed the experiment myself, including the research question, prompt set, instruction variations, scoring rule, and evaluation plan. Each and every decision of the architecture of this experiment is mine and I can defend/discuss my choices with my own rational.
 
 ## 3. Model evaluation
 
